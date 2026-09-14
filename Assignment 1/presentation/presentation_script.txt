@@ -1,0 +1,65 @@
+ON THE HOT SEAT: PRESENTATION SCRIPT
+Jacob Beal & Kameron Moss · CS 6830 Project 1
+Target length: about 4.5 minutes (~640 words at a relaxed pace)
+
+Tips
+- Whoever presents: pick your name in the first line.
+- You don't need to read this word for word. Hit the main point and the numbers on each slide.
+- This script is also in the slides' speaker notes. If you edit it, re-run
+  build_presentation.py to update the notes.
+
+
+[SLIDE 1 — Title]  (~15 sec)
+Hi everyone, I'm [Jacob / Kameron], and [Kameron / Jacob] and I looked at a question every baseball fan has an opinion on: when a team is losing, does the manager really pay for it?
+
+
+[SLIDE 2 — The question]  (~35 sec)
+Every season you hear that some manager is "on the hot seat." Everyone assumes it's all about winning, but we wanted to see if the data actually backs that up.
+
+This matters because a lot of people care about the answer: front offices deciding when to make a change, managers and their agents trying to figure out how safe the job is, and fans and sports media who argue about this every week.
+
+So we asked three questions. Do managers with better records keep their jobs? Are mid-season firings really on losing teams? And do managers who stay longer win more?
+
+
+[SLIDE 3 — The data]  (~30 sec)
+We used the Sean Lahman Baseball Database, mainly the Managers and Teams tables. That gave us 2,915 manager seasons from 1901 to 2017.
+
+For every one, we tracked two things: did the manager finish the season, and were they back with the same team the next year? We matched teams by franchise, so when the Expos moved and became the Nationals, it still counts as the same job. And we started at 1901, because before that, teams folded so often that "not back" usually just meant the team was gone.
+
+
+[SLIDE 4 — Question 1: retention]  (~40 sec)
+First question: does winning keep you employed? Yes, and the pattern is really steady.
+
+Among managers whose team won less than 40% of its games, only 63% were back the next year. Every step up in winning percentage, that number climbs, all the way to 93% for managers above .600.
+
+On average, managers who kept their jobs won 51.2% of their games, compared to 46.1% for the ones who didn't come back. We used Welch's t-test, and a gap that big is very unlikely to be random chance.
+
+
+[SLIDE 5 — The surprise]  (~35 sec)
+But this result surprised us: winning isn't always enough. Twenty managers won at least 60% of their games and still weren't back the next season, and six of them managed the Yankees.
+
+Chuck Dressen won 105 games with the Dodgers in 1953 and didn't come back. Yogi Berra won the pennant with the Yankees in 1964 and was let go right after the World Series.
+
+One thing to keep in mind: our data can't tell a firing apart from someone quitting, retiring, or getting promoted. But even a great record clearly doesn't guarantee the job.
+
+
+[SLIDE 6 — Question 2: mid-season firings]  (~35 sec)
+Second question: who gets replaced in the middle of the season? Almost always, losing teams.
+
+Managers who were replaced mid-season had won just 43.8% of their games, compared to 50.3% for managers who finished the year. On the chart, the orange curve is the replaced managers, and it's shifted clearly to the left of .500. About three out of four replaced managers had a losing record. And the typical one was gone about 80 games in, right around the halfway point of the season.
+
+
+[SLIDE 7 — Question 3: tenure]  (~40 sec)
+Third: do managers who stay longer win more? They do. Managers who only lasted one season with a team averaged a .433 winning percentage. Managers who lasted seven or more seasons averaged .528.
+
+But this can be explained in both directions: good managers get to stay, and staying means you survived the bad years. So it's a correlation, not proof that sticking around makes you win.
+
+And one data point didn't make sense at first. Connie Mack managed the Philadelphia A's for 50 straight seasons with a losing record. That's explained by the fact that he was also a co-owner of the team. It's hard to fire yourself.
+
+
+[SLIDE 8 — Takeaways]  (~30 sec)
+So, to wrap up: job security climbs steadily with winning, three out of four mid-season firings hit managers with losing records, and longer tenures go with better records.
+
+This matters because it gives front offices and managers a realistic picture of job security. A losing record is the biggest warning sign, but as the Yankees showed, even winning isn't a guarantee.
+
+Thanks! We're happy to take any questions.
